@@ -82,6 +82,8 @@ tr:hover {
 
 th, td {
   padding: 10px;
+  border: dashed powderblue;
+  text-decoration: ;
 }
 
 
