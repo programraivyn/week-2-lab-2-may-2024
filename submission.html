@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: powderblue;
+    border-radius: 20px;
+    font-style: oblique;
+    }
+
+    #container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: transparent;
+    }
+    #animate {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: powderblue;
+    }
+
+    button {
+        background-color: whitesmoke;
+        color: plum;
+        padding: 5px;
+        border: 2px solid powderblue;
+        font-weight: bold;
+    }
+
+    .subbie {
+        display: flex;
+        justify-content: center;
+        margin-top: 160px;
+        font-size: 35px;
+        font-style: oblique;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .footie {
+         display: flex;
+         justify-content: center;
+        align-items: flex-end;
+        margin-top: 290px;
+    }
+
+</style>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+     <title>Request Complete!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about.html">ABOUT MY COOKIN'</a>
+        <a href="schedule.html">MY SCHEDULE</a>
+        <a href="requests.html">REQUESTS</a>
+      </nav>
+
+<p><button onclick="myMove()">Click for Coolness</button></p> 
+<div id ="container">
+    <div id ="animate"></div>
+</div>
+
+<div class="subbie">Thank you for submitting your request! An email confirming the details of your <br>
+    meal request has been sent to the email address you provided. If for any reason you need to modify
+    or cancel your request, please respond to your confirmation email as promptly as possible. <br>
+    <br>
+    - Vita</div>
+
+<script>
+    function myMove() {
+    let id = null;
+    const elem = document.getElementById("animate");   
+    let pos = 7;
+    clearInterval(id);
+    id = setInterval(frame, 5);
+    function frame() {
+    if (pos == 525) {
+    clearInterval(id);
+    } else {
+    pos++; 
+    elem.style.top = pos + "px"; 
+    elem.style.left = pos + "px"; 
+    }
+      }
+        }
+</script>
+</body>
+
+<div class="footie"><footer><em>Created at CodeX © 2024 Raivyn Bates. All Rights Reserved.</em></footer>
+</div>
+
+
+
+</html>

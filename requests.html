@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                background-color: powderblue;
+                border-radius: 20px;
+                font-style: oblique;
+
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                padding: 15px;
+                color: rgb(248, 248, 248);
+                
+            }
+
+            form {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: baseline;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 300px;
+                padding: 10px;
+                border: 3px dotted powderblue;
+                color: rgb(254, 252, 255);
+                font-weight: bolder;
+            }
+
+            .formfill {
+                display: flex;
+                justify-content: center;
+            }
+
+            .disclaimer {
+                font-size: 9px;
+                font-style: oblique;
+            }
+
+            .footie {
+                display: flex;
+                align-items: flex-end;
+                margin-top: 190px;
+            }
+
+
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Requests</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+      </head>
+      <body>
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html">ABOUT MY COOKIN'</a>
+          <a href="schedule.html">MY SCHEDULE</a>
+          <a>REQUESTS</a>
+        </nav>
+        <div >
+            I've held you long enough, now to the good part! Are you interested in tasting some of the delicious<br>
+            meals I pour so much love and compassion into cooking? Well, look no further! If you complete the form below,<br>
+            I'd be happy to cook up some of my favorites in hopes that they'll become favorites of yours as well! <br>
+            Laissez les bons temps rouler, and happy cooking!
+        </div>
+        <div class="formfill">
+        <form action="submission.html">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value="Jane"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" value="janedoe@codexacademy.edu"><br><br>
+            <label for="lname">Desired Dish:</label><br>
+            <input type="text" id="desiredish" name="desiredish" value="Jambalaya"><br><br>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="disclaimer">
+            Disclaimer: As of right now, I'm currently limiting meal requests to one per person; <br>
+            however, I do expect this to change as my schedule and other circumstances allow.
+        </div>
+            
+            
+            </body>
+           <div class="footie"><footer><em>Created at CodeX © 2024 Raivyn Bates. All Rights Reserved.</em></footer>
+           </div>
+           </html>
